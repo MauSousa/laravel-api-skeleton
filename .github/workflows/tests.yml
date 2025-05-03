@@ -32,9 +32,6 @@ jobs:
            brew install aspell
           fi
 
-      - name: Build Assets
-        run: npm run build
-
       - name: Install Dependencies
         run: composer install --no-interaction --prefer-dist --optimize-autoloader
 
