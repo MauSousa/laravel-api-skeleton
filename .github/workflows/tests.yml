@@ -32,16 +32,6 @@ jobs:
            brew install aspell
           fi
 
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          cache: 'npm'
-
-      - name: Install Node Dependencies
-        run: npm install
-
       - name: Build Assets
         run: npm run build
 
